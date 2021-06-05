@@ -1,0 +1,17 @@
+// @mixin theme($theme: red, $theme2: black) {
+//   background: $theme;
+//   color: $theme2;
+//   padding: 10px;
+// }
+
+.small {
+  padding: 10px;
+  background: red;
+}
+
+.button {
+  // @include theme($theme: blue);
+  &:hover {
+    background-color: black;
+  }
+}

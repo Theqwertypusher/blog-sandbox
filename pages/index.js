@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
+import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
 import Date from "../components/date";
+import { Button } from "../components/Shared/Button/button";
 
 import { getSortedPostsData } from "../lib/posts";
 
@@ -37,6 +38,7 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
+      <Button content="click here" />
     </Layout>
   );
 }
